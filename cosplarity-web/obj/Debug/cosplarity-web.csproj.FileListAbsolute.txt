@@ -1,0 +1,6 @@
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\cosplarity-web.dll.config
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\cosplarity-web.dll
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\cosplarity-web.pdb
+F:\Cosplarity\cosplarity-web\cosplarity-web\obj\Debug\cosplarity-web.csprojResolveAssemblyReference.cache
+F:\Cosplarity\cosplarity-web\cosplarity-web\obj\Debug\cosplarity-web.dll
+F:\Cosplarity\cosplarity-web\cosplarity-web\obj\Debug\cosplarity-web.pdb
