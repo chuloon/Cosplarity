@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -31,10 +31,14 @@
     <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
         <div class="page-container">
             <div class="navbar-header">
-                <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <button type="button" class="navbar-toggle cart-button pull-right"><i class="icon-cart"></i></button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-content" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Cospitality</a>
             </div>
-            <div class="navbar-inverse side-collapse in">
+            <div id="menu-content" class="navbar-inverse collapse">
                 <nav role="navigation" class="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#Home">Home</a></li>
@@ -45,6 +49,10 @@
             </div>
         </div>
     </header>
-    <div class="page-container"></div>
+    <div class="page-container">
+        <div class="page-content">
+
+        </div>
+    </div>
 </body>
 </html>
