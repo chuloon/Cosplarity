@@ -2088,12 +2088,20 @@
     <Content Include="assets\swf\datatables\flashExport.swf" />
     <Content Include="assets\swf\handsontable\zero_clipboard.swf" />
     <Content Include="index.html" />
+    <Content Include="Index\Index.html" />
     <Content Include="Layout\Layout.css" />
     <Content Include="Layout\Layout.html" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Scripts\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\icons\fontawesome\fonts\fontawesome-webfont.eot" />
@@ -2385,6 +2393,8 @@
     <Content Include="assets\locales\en.json" />
     <Content Include="assets\locales\ru.json" />
     <Content Include="assets\locales\ua.json" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
