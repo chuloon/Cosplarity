@@ -2088,9 +2088,9 @@
     <Content Include="assets\swf\datatables\flashExport.swf" />
     <Content Include="assets\swf\handsontable\zero_clipboard.swf" />
     <Content Include="index.html" />
-    <Content Include="Index\Index.html" />
-    <Content Include="Layout\Layout.css" />
-    <Content Include="Layout\Layout.html" />
+    <Content Include="Pages\Index\Index.html" />
+    <Content Include="Pages\Layout\Layout.css" />
+    <Content Include="Pages\Layout\Layout.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -2402,7 +2402,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pages\Works\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>

@@ -1,5 +1,5 @@
 ﻿$().ready(() => {
-    $.get("/index/index.html", (result) => {
+    $.get("../pages/index/index.html", (result) => {
         $('#main-content').html(result);
     })
 });
