@@ -4,3 +4,11 @@ F:\Cosplarity\cosplarity-web\cosplarity-web\bin\cosplarity-web.pdb
 F:\Cosplarity\cosplarity-web\cosplarity-web\obj\Debug\cosplarity-web.csprojResolveAssemblyReference.cache
 F:\Cosplarity\cosplarity-web\cosplarity-web\obj\Debug\cosplarity-web.dll
 F:\Cosplarity\cosplarity-web\cosplarity-web\obj\Debug\cosplarity-web.pdb
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\FirebaseSharp.Portable.dll
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\Newtonsoft.Json.dll
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\System.Net.Http.Extensions.dll
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\System.Net.Http.Primitives.dll
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\Newtonsoft.Json.xml
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\System.Net.Http.Extensions.xml
+F:\Cosplarity\cosplarity-web\cosplarity-web\bin\System.Net.Http.Primitives.xml
+F:\Cosplarity\cosplarity-web\cosplarity-web\obj\Debug\cosplarity-web.csproj.App.config
