@@ -8,6 +8,15 @@ $().ready(function () {
             messagingSenderId: "159653646318"
         };
         firebase.initializeApp(config);
+        var database = firebase.database();
+        //firebase.database().ref('users/123').set({
+        //    username: "hello",
+        //    email: "ben@test.com"
+        //})
+        return firebase.database().ref('/users/123').once('value').then(function (snapshot) {
+            var username = snapshot.val();
+            debugger;
+        });
     });
     $.get("../index/index.html", function (result) {
         $('#main-content').html(result);

@@ -8,6 +8,18 @@
             messagingSenderId: "159653646318"
         };
         firebase.initializeApp(config);
+
+        var database = firebase.database();
+
+        //firebase.database().ref('users/123').set({
+        //    username: "hello",
+        //    email: "ben@test.com"
+        //})
+
+        return firebase.database().ref('/users/123').once('value').then((snapshot) => {
+            var username = snapshot.val();
+            debugger;
+        });
     });
 
     $.get("../index/index.html", (result) => {
