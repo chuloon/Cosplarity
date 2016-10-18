@@ -6,27 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Navbar</title>
 
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-messaging.js"></script>
-
-    <!--<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyD8Lnr7oH-QY97adMdhLUtKBOSQONGkMr0",
-            authDomain: "cosplarity.firebaseapp.com",
-            databaseURL: "https://cosplarity.firebaseio.com",
-            storageBucket: "cosplarity.appspot.com",
-            messagingSenderId: "159653646318"
-        };
-        debugger;
-        firebase.initializeApp(config);
-    </script>-->
-    <!-- /Firebase -->
-
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
@@ -35,12 +14,17 @@
     <link href="/assets/css/components.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/colors.css" rel="stylesheet" type="text/css">
     <!-- /global stylesheets -->
+
     <!-- Core JS files -->
     <script type="text/javascript" src="/assets/js/plugins/loaders/pace.min.js"></script>
     <script type="text/javascript" src="/assets/js/core/libraries/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/js/core/libraries/bootstrap.min.js"></script>
     <script type="text/javascript" src="/assets/js/plugins/loaders/blockui.min.js"></script>
-    <script type="text/javascript" src="/Scripts/pager.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/path.js/0.8.4/path.min.js"></script>
+    <script src="/Scripts/require.js"></script>
+
+    <script type="text/javascript" src="/Scripts/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
     <!-- /core JS files -->
     <!-- Custom stylesheets -->
     <link href="layout.css" rel="stylesheet" type="text/css">
@@ -49,8 +33,11 @@
     <!-- Custom JS Files -->
     <script type="text/javascript" src="/../app.js"></script>
     <!-- /Custom JS Files -->
+
+    <base href="/" />
 </head>
 
+<!--<body ng-app="cospolarityApp">-->
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -68,7 +55,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a id="browse-link" href="#">Browse</a></li>
                     <li><a id="works-link" href="#">How it works</a></li>
-                    <li><a id="about-link" href="#">About</a></li>
+                    <li><a id="about-link" href="/about">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Login</a></li>
@@ -79,9 +66,42 @@
     </nav>
     <div class="page-container" style="margin-top: 60px;">
         <div class="page-content">
-            <div id="main-content"></div>
+            <div id="main-content">
+                <div ng-view></div>
+            </div>
             <div id="secondary-content"></div>
         </div>
     </div>
+
+    <script>
+        $().ready(() => {
+            $.getScript('https://www.gstatic.com/firebasejs/3.5.0/firebase.js', function () {
+                var config = {
+                    apiKey: "AIzaSyD8Lnr7oH-QY97adMdhLUtKBOSQONGkMr0",
+                    authDomain: "cosplarity.firebaseapp.com",
+                    databaseURL: "https://cosplarity.firebaseio.com",
+                    storageBucket: "cosplarity.appspot.com",
+                    messagingSenderId: "159653646318"
+                };
+                
+                firebase.initializeApp(config);
+
+                var database = firebase.database();
+
+                //firebase.database().ref('users/123').set({
+                //    username: "hello",
+                //    email: "ben@test.com"
+                //})
+
+                //return firebase.database().ref('/users/123').once('value').then((snapshot) => {
+                //    var username = snapshot.val();
+                //    debugger;
+                //});
+            });
+            //$.get("../pages/index/index.html", (result) => {
+            //    $('#main-content').html(result);
+            //});
+        });
+    </script>
 </body>
 </html>

@@ -1,28 +1,13 @@
-﻿$().ready(() => {
-    $.getScript('https://www.gstatic.com/firebasejs/3.5.0/firebase.js', function () {
-        var config = {
-            apiKey: "AIzaSyD8Lnr7oH-QY97adMdhLUtKBOSQONGkMr0",
-            authDomain: "cosplarity.firebaseapp.com",
-            databaseURL: "https://cosplarity.firebaseio.com",
-            storageBucket: "cosplarity.appspot.com",
-            messagingSenderId: "159653646318"
-        };
-        firebase.initializeApp(config);
+﻿//var app = angular.module("cospolarityApp", ["ngRoute"]);
+//app.config(($routeProvider, $locationProvider) => {
+//    $routeProvider
+//        .when("/", {
+//            templateUrl: "/pages/index/index.html"
+//        })
+//        .when("/about", {
+//            templateUrl: "/pages/about/about.html"
+//        })
+//        .otherwise({ redirectTo: '/' });
 
-        var database = firebase.database();
-
-        //firebase.database().ref('users/123').set({
-        //    username: "hello",
-        //    email: "ben@test.com"
-        //})
-
-        return firebase.database().ref('/users/123').once('value').then((snapshot) => {
-            var username = snapshot.val();
-            debugger;
-        });
-    });
-
-    $.get("../index/index.html", (result) => {
-        $('#main-content').html(result);
-    });
-});
+//    $locationProvider.html5Mode(true);
+//});
